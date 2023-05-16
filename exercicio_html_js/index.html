@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Validação de Dados</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Validação de Dados</h1>
+        <form id="form">
+        <label>Digite o número de A</label>
+        <input id="valorA" type="number" placeholder="Valor de A" required>
+        <p class="warning_message">Esses valores são iguais, tente outros!</p>
+        <label>Digite o número de B</label>
+        <input id="valorB" type="number" placeholder="Valor de B" required>
+        <button type="submit">Consultar</button>
+        <button class= "reset_button" type="reset">Limpar campos</button>
+        </form>
+        <p class="sucess_message">Essa mensagem é <b><i>TOP</i></b>, porque a validação deu certo! <small>(e meu código também &#128516)</small></p>
+        <p class="error_message">Putz! O valor de B é menor que A... Conserte isso, por favor. <small>(mas meu código continua liso &#128540)</small></p>
+    </div>
+    <script src="./exercicio.js"></script>
+</body>
+</html>
