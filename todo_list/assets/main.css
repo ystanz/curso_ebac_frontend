@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: contain;
+    background-color: #262626;
+    background-image: url(./images/background.jpg);
+    color: #F2F0C9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header .fa-edit {
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.container {
+    height: 450px;
+    width: 430px;
+    background-color: #262626;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#input-new-task {
+    height: 50px;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+#input-new-task::placeholder {
+    color: #bbb;
+}
+
+ul li {
+    background-color: #F2F0C9;
+    color: #333;
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+}
+
+ul .fa-check, .fa-trash {
+    position: absolute;
+    cursor: pointer;
+}
+
+ul .fa-check {
+    right: 40px;
+    color: green;
+}
+
+ul .fa-trash {
+    right: 15px;
+    color: red;
+}
+
+ul .checked {
+    text-decoration: line-through;
+    background-color: lightgreen;
+    transition: .2s;
+}
+
+#btn-add-task {
+    height: 50px;
+    width: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+}
+
+#btn-add-task:hover {
+    cursor: pointer;
+    background-color: #6666668a;
+}
+
+/* 
+
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.topo input {
+    width: 400px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: #595959;
+    color: #fff;
+}
+
+.topo button {
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    background-color: #595959;
+    color: #fff;
+    outline: none;
+}
+
+.topo button:hover {
+    background-color: #5959598a;
+    cursor: pointer;
+}
+
+#lista_tarefas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista_tarefas li {
+    padding: 10px;
+    background-color: #595959;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    height: 40px;
+
+    position: relative;
+}
+
+.fa-cheack {
+    position: absolute;
+}
+
+.btn_action {
+    border-radius: 20px;
+    border: none;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background-color: #26262680;
+    color: #fff;
+}
+
+.btn_action:hover {
+    background-color: #26262641;
+}
+*/
