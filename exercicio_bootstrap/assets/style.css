@@ -1,0 +1,19 @@
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+.row {
+    margin-top: 24px;
+}
+
+.row h1 {
+    text-align: center;
+}
+
+.row form label {
+    margin-top: 16px;
+}
+.row button {
+    margin-top: 24px;
+}
