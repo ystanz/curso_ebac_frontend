@@ -1,0 +1,99 @@
+@use 'config/reset.scss';
+@use 'config/variaveis.scss';
+@use 'sass:math';
+
+@function pxToEm($pxValue) {
+    @return math.div($pxValue, 16px) * 1em;
+}
+
+body {
+    background-color: variaveis.$backgroundColor;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: variaveis.$primaryColor;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: pxToEm(16px) 0;
+    }
+}
+
+.menu {
+    display: flex;
+
+    li {
+        font-weight: bold;
+        margin-left: pxToEm(24px);
+        
+        a {
+            color: variaveis.$fontColor;
+        }
+    }
+    
+}
+
+section {
+    padding: pxToEm(56px) 0;
+}
+
+.products {
+    margin-top: pxToEm(40px);
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: pxToEm(16px);
+}
+
+.product-button {
+    display: block;
+    background-color: variaveis.$secundaryColor;
+    color: variaveis.$fontColor;
+    text-align: center;
+    padding: pxToEm(8px) 0;
+    border-radius: pxToEm(8px);
+    margin-top: pxToEm(8px);
+
+    &:hover {
+        background-color: lighten(variaveis.$secundaryColor, 7%);
+    }
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+    .products {
+        display: block;
+    }
+
+    .product-item {
+        margin-bottom: pxToEm(32px);
+    }
+}
+
+@media screen and (max-width: variaveis.$tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
