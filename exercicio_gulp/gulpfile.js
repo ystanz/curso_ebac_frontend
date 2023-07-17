@@ -3,6 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
+const obfuscate = require('gulp-obfuscate');
 
 function sassCompile() {
     return gulp.src('./source/styles/main.scss')
@@ -20,6 +21,14 @@ function imgCompress() {
     .pipe(gulp.dest('./build/images'));
 }
 
+function jsCompress () {
+    return gulp.src('./source/scripts/*.js')
+    .pipe(uglify())
+    .pipe(obfuscate())
+    .pipe(gulp.dest('./build/scripts'));
+}
+
 
 exports.sassCompile = sassCompile;
 exports.imgCompress = imgCompress;
+exports.jsCompress = jsCompress;
