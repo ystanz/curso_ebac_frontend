@@ -14,5 +14,12 @@ function sassCompile() {
         .pipe(gulp.dest('./build/styles'));
 }
 
+function imgCompress() {
+    return gulp.src('./source/images/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./build/images'));
+}
+
 
 exports.sassCompile = sassCompile;
+exports.imgCompress = imgCompress;
