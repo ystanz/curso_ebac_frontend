@@ -28,7 +28,8 @@ function jsCompress () {
     .pipe(gulp.dest('./build/scripts'));
 }
 
-
-exports.sassCompile = sassCompile;
-exports.imgCompress = imgCompress;
-exports.jsCompress = jsCompress;
+exports.default = function () {
+    gulp.watch('./source/styles/*.scss', {IgnoreInitial: false}, gulp.series(sassCompile)); 
+    gulp.watch('./source/images/*', {IgnoreInitial: false}, gulp.series(imgCompress));
+    gulp.watch('./source/scripts/*.js', {IgnoreInital: false}, gulp.series(jsCompress));
+}
