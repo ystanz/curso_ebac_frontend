@@ -122,6 +122,12 @@ input[type="address"] {
     width: 300px;
 }
 
-.message-error {
+input.error {
+    border: 1px solid red;
+    background-color: #fdd;
+}
+
+label.error {
     color: red;
+    font-weight: bold;
 }
