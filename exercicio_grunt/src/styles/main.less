@@ -2,4 +2,71 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Wix Madefor Text', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(45deg, orange, rgba(0, 0, 0));
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(52,52,52);
+    border: none;
+    border-radius: 100%;
+    color: #fff;
+    transition: all ease .3s;
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.clean-buttons {
+    background-color: rgb(167,166,167);
+    color: #000;
+}
+
+.signal-buttons {
+    background-color: rgb(254,148,0);
+}
+
+.colspan-button {
+    width: 105px;
+    border-radius: 40px;
+}
+
+#result {
+    width: 217px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    margin-bottom: 10px;
+    align-items: center;
 }
